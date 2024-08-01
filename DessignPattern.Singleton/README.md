@@ -1,0 +1,1 @@
+# Signleton pattern

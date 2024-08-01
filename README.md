@@ -1,3 +1,3 @@
 # Design patterns C#
 
-- [Singleton](/DesignPattern.Singleton)
+- [Singleton](/DesignPattern.SingletonAsp)
