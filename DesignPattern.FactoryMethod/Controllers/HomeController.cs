@@ -2,7 +2,7 @@ using DesignPattern.FactoryMethod.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace DesignPattern.FactoryMethod.Controllers
+namespace WebApplication1.Controllers
 {
     public class HomeController : Controller
     {

@@ -11,9 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton.Tools", "Tools\Si
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FactoryMethod", "FactoryMethod", "{6EEEB190-853E-48C1-8763-6EEB746E7576}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern.FactoryMethod", "DesignPattern.FactoryMethod\DesignPattern.FactoryMethod.csproj", "{8538FD6A-CEED-4AC3-957A-BCD7A8C25A06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPattern.FactoryMethod", "DesignPattern.FactoryMethod\DesignPattern.FactoryMethod.csproj", "{8538FD6A-CEED-4AC3-957A-BCD7A8C25A06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod.Tools", "FactoryMethod.Tools\FactoryMethod.Tools.csproj", "{77A926E6-ABE0-4C94-B3A8-5D810A267017}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryMethod.Tools", "FactoryMethod.Tools\FactoryMethod.Tools.csproj", "{77A926E6-ABE0-4C94-B3A8-5D810A267017}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

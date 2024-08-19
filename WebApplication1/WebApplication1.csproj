@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FactoryMethod.Tools\FactoryMethod.Tools.csproj" />
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>
