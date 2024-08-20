@@ -1,4 +1,5 @@
 # Design patterns C#
 
 - [Singleton](/DesignPattern.SingletonAsp)  
-- [FactoryMethod](/DesignPattern.FactoryMethod)
+- [Factory Method](/DesignPattern.FactoryMethod)  
+- [Dependency Injection](/DesignPattern.DependencyInjection)  
