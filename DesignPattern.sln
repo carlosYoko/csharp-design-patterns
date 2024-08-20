@@ -5,7 +5,7 @@ VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Singleton", "Singleton", "{E145340C-EC91-47F7-B2C7-E3EF7D2E0610}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPattern.SingletonAsp", "DesignPattern.SingletonAsp\DesignPattern.SingletonAsp.csproj", "{ADAEE667-AA01-42C0-9294-E540289E803E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPattern.Singleton", "DesignPattern.SingletonAsp\DesignPattern.Singleton.csproj", "{ADAEE667-AA01-42C0-9294-E540289E803E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPattern.Singleton.Tools", "Tools\DesignPattern.Singleton.Tools.csproj", "{F3CE2639-852F-4562-B843-0DE5BA842F82}"
 EndProject
