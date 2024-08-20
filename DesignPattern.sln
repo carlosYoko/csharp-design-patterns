@@ -7,13 +7,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Singleton", "Singleton", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPattern.SingletonAsp", "DesignPattern.SingletonAsp\DesignPattern.SingletonAsp.csproj", "{ADAEE667-AA01-42C0-9294-E540289E803E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton.Tools", "Tools\Singleton.Tools.csproj", "{F3CE2639-852F-4562-B843-0DE5BA842F82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPattern.Singleton.Tools", "Tools\DesignPattern.Singleton.Tools.csproj", "{F3CE2639-852F-4562-B843-0DE5BA842F82}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FactoryMethod", "FactoryMethod", "{6EEEB190-853E-48C1-8763-6EEB746E7576}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPattern.FactoryMethod", "DesignPattern.FactoryMethod\DesignPattern.FactoryMethod.csproj", "{8538FD6A-CEED-4AC3-957A-BCD7A8C25A06}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryMethod.Tools", "FactoryMethod.Tools\FactoryMethod.Tools.csproj", "{77A926E6-ABE0-4C94-B3A8-5D810A267017}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPattern.FactoryMethod.Tools", "FactoryMethod.Tools\DesignPattern.FactoryMethod.Tools.csproj", "{77A926E6-ABE0-4C94-B3A8-5D810A267017}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DependencyInjection", "DependencyInjection", "{31F3330D-4572-40B1-9B52-086544123899}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern.DependencyInjection", "DesignPattern.DependencyInjection\DesignPattern.DependencyInjection.csproj", "{FCEFE1CC-E4BC-472E-A997-A812A5D02B3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern.DependencyInjection.Tools", "DesignPattern.DependencyInjection.Tools\DesignPattern.DependencyInjection.Tools.csproj", "{D4AEFB89-5249-41D4-B331-D3616BB0B00B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +43,14 @@ Global
 		{77A926E6-ABE0-4C94-B3A8-5D810A267017}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77A926E6-ABE0-4C94-B3A8-5D810A267017}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77A926E6-ABE0-4C94-B3A8-5D810A267017}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCEFE1CC-E4BC-472E-A997-A812A5D02B3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCEFE1CC-E4BC-472E-A997-A812A5D02B3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCEFE1CC-E4BC-472E-A997-A812A5D02B3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCEFE1CC-E4BC-472E-A997-A812A5D02B3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4AEFB89-5249-41D4-B331-D3616BB0B00B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4AEFB89-5249-41D4-B331-D3616BB0B00B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4AEFB89-5249-41D4-B331-D3616BB0B00B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4AEFB89-5249-41D4-B331-D3616BB0B00B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +60,8 @@ Global
 		{F3CE2639-852F-4562-B843-0DE5BA842F82} = {E145340C-EC91-47F7-B2C7-E3EF7D2E0610}
 		{8538FD6A-CEED-4AC3-957A-BCD7A8C25A06} = {6EEEB190-853E-48C1-8763-6EEB746E7576}
 		{77A926E6-ABE0-4C94-B3A8-5D810A267017} = {6EEEB190-853E-48C1-8763-6EEB746E7576}
+		{FCEFE1CC-E4BC-472E-A997-A812A5D02B3E} = {31F3330D-4572-40B1-9B52-086544123899}
+		{D4AEFB89-5249-41D4-B331-D3616BB0B00B} = {31F3330D-4572-40B1-9B52-086544123899}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BF562170-16D0-4F4D-B86F-190FA6A12DAA}
