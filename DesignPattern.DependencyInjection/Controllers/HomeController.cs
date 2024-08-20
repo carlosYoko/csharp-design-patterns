@@ -1,30 +1,25 @@
-using DesignPattern.DependencyInjection.Configuration;
 using DesignPattern.DependencyInjection.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Options;
 using System.Diagnostics;
-using Tools;
 
 namespace DesignPattern.DependencyInjection.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IOptions<MyConfig> _config;
+        private readonly ILogger<HomeController> _logger;
 
-        public HomeController(IOptions<MyConfig> config)
+        public HomeController(ILogger<HomeController> logger)
         {
-            _config = config;
+            _logger = logger;
         }
 
         public IActionResult Index()
         {
-            Log.GetInstance(_config.Value.PathLog).Save("Ha entrado en index");
             return View();
         }
 
         public IActionResult Privacy()
         {
-            Log.GetInstance(_config.Value.PathLog).Save("Ha entrado en privacy");
             return View();
         }
 

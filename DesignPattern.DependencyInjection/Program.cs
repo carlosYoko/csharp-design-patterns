@@ -1,11 +1,13 @@
 using DesignPattern.DependencyInjection.Configuration;
+using FactoryMethod.Tools.Earn;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.Configure<MyConfig>(builder.Configuration.GetSection("MyConfig"));
-
+builder.Services.AddTransient<EarnFactory, LocalEarnFactory>(provider => new LocalEarnFactory(0.20m));
+builder.Services.AddTransient<EarnFactory, ForeignEarnFactory>(provider => new ForeignEarnFactory(0.20m, 20));
 
 
 var app = builder.Build();

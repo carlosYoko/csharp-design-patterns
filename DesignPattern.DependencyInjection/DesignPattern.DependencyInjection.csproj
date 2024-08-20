@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DesignPattern.DependencyInjection.Tools\DesignPattern.DependencyInjection.Tools.csproj" />
+    <ProjectReference Include="..\FactoryMethod.Tools\DesignPattern.FactoryMethod.Tools.csproj" />
   </ItemGroup>
 
 </Project>
