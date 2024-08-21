@@ -2,7 +2,7 @@
 
 namespace DesignPattern.Repository.Contracts
 {
-    internal interface IBeer
+    internal interface IBeerRepositoy
     {
         IEnumerable<Beer> Get();
         Beer Get(int id);
