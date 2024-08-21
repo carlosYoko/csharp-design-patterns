@@ -1,4 +1,5 @@
 ﻿using DesignPattern.Repository.Models;
+using DesignPattern.Repository.Repository;
 
 public static class Program
 {
@@ -6,8 +7,14 @@ public static class Program
     {
         using (var context = new RepositoryPatternContext())
         {
-            var list = context.Beers.ToList();
-            foreach (var item in list)
+            var beerRepository = new BeerRepository(context);
+            var beer = new Beer();
+            beer.Name = "Corona";
+            beer.Style = "Pilsner";
+            beerRepository.Add(beer);
+            beerRepository.Save();
+
+            foreach (var item in beerRepository.Get())
             {
                 Console.WriteLine(item.Name);
             }

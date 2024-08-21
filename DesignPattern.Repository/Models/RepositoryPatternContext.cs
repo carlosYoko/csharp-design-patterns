@@ -27,7 +27,7 @@ public partial class RepositoryPatternContext : DbContext
 
             entity.ToTable("Beer");
 
-            entity.Property(e => e.Id).ValueGeneratedNever();
+            entity.Property(e => e.Id).ValueGeneratedOnAdd();
             entity.Property(e => e.Name)
                 .HasMaxLength(50)
                 .IsUnicode(false);
