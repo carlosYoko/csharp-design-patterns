@@ -12,10 +12,15 @@ public static class Program
             beerRepository.Add(beer);
             beerRepository.Save();
 
-            foreach (var item in beerRepository.Get())
-            {
-                Console.WriteLine(item.Name);
-            }
+            foreach (var item in beerRepository.Get()) { Console.WriteLine(item.Name); }
+
+
+            var brandRepository = new Repository<Brand>(context);
+            var brand = new Brand() { Name = "Damm" };
+            brandRepository.Add(brand);
+            brandRepository.Save();
+
+            foreach (var item in brandRepository.Get()) { Console.WriteLine(item.Name); }
         }
     }
 }
