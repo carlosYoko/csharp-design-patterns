@@ -1,7 +1,20 @@
+using DesignPattern.Repository.Models.Data;
+using DesignPattern.Repository.Repository;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// DbContext
+builder.Services.AddDbContext<RepositoryPatternContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Connection"));
+});
+
+// Repository Injection
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
 var app = builder.Build();
 
