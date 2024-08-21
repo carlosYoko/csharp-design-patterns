@@ -3,11 +3,9 @@ using System.Collections.Generic;
 
 namespace DesignPattern.Repository.Models;
 
-public partial class Beer
+public partial class Brand
 {
     public int Id { get; set; }
 
     public string Name { get; set; } = null!;
-
-    public string Style { get; set; } = null!;
 }
