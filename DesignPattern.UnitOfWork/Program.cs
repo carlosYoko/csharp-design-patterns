@@ -1,7 +1,17 @@
+using DesignPattern.UnitOfWork.Models.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+
+// DbContext
+builder.Services.AddDbContext<UnitOfWorkContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Connection"));
+});
 
 var app = builder.Build();
 
