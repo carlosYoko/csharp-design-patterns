@@ -1,4 +1,5 @@
 using DesignPattern.UnitOfWork.Models.Data;
+using DesignPattern.UnitOfWork.Repository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +13,10 @@ builder.Services.AddDbContext<UnitOfWorkContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("Connection"));
 });
+
+// Repository Injection
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 var app = builder.Build();
 
