@@ -9,15 +9,16 @@
 
     <div class="row">
         <div class="col-12">
-            <table class="table"></table>
+            <table class="table">
             <tr>
                 <th>Nombre</th>
             </tr>
             @foreach(var beer in Model)
             {
-            <tr>
-                <td>@beer.Name</td>
-            </tr>
+                <tr>
+                    <td>@beer.Name</td>
+                </tr>
             }
+            </table>
         </div>
     </div>
