@@ -12,12 +12,11 @@ namespace DesignPattern.UnitOfWork.Models.ViewModels
         [Display(Name = "Estilo")]
         public string Style { get; set; }
 
-        [Required]
         [Display(Name = "Marca")]
         public Guid? BrandId { get; set; }
 
         [Display(Name = "Otra marca")]
-        public string OtherBrand { get; set; }
+        public string? OtherBrand { get; set; }
 
     }
 }
