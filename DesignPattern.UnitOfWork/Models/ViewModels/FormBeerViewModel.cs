@@ -1,9 +1,11 @@
 ﻿namespace DesignPattern.UnitOfWork.Models.ViewModels
 {
-    public class BeerViewModel
+    public class FormBeerViewModel
     {
-        public Guid Id { get; set; }
         public string Name { get; set; }
         public string Style { get; set; }
+        public Guid? BrandId { get; set; }
+        public string OtherBrand { get; set; }
+
     }
 }
