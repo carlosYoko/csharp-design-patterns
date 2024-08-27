@@ -30,9 +30,7 @@ namespace DesignPattern.UnitOfWork.Controllers
         [HttpGet]
         public IActionResult Add()
         {
-            var brands = _unitOfWork.Beers.Get();
-            ViewBag.Brands = new SelectList(brands, "BrandId", "Name");
-
+            GetBrandsData();
             return View();
         }
 
@@ -41,8 +39,7 @@ namespace DesignPattern.UnitOfWork.Controllers
         {
             if (!ModelState.IsValid)
             {
-                var brands = _unitOfWork.Beers.Get();
-                ViewBag.Brands = new SelectList(brands, "BrandId", "Name");
+                GetBrandsData();
                 return View("Add", beerVm);
             }
 
@@ -68,5 +65,14 @@ namespace DesignPattern.UnitOfWork.Controllers
 
             return RedirectToAction("Index");
         }
+
+        #region Helpers
+        private void GetBrandsData()
+        {
+            var brands = _unitOfWork.Brands.Get();
+            ViewBag.Brands = new SelectList(brands, "BrandId", "Name");
+
+        }
+        #endregion
     }
 }
