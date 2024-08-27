@@ -55,7 +55,7 @@ namespace DesignPattern.UnitOfWork.Controllers
         private void GetBrandsData()
         {
             var brands = _unitOfWork.Brands.Get();
-            ViewBag.Brands = new SelectList(brands, "BrandId", "Name");
+            ViewBag.Brands = new SelectList(brands, "Id", "Name");
 
         }
         #endregion
