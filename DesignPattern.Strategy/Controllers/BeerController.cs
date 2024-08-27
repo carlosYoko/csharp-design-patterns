@@ -1,4 +1,5 @@
-﻿using DesignPattern.UnitOfWork.Models.ViewModels;
+﻿using DesignPattern.Strategy.Strategies;
+using DesignPattern.UnitOfWork.Models.ViewModels;
 using DesignPattern.UnitOfWork.Repository;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -41,6 +42,11 @@ namespace DesignPattern.UnitOfWork.Controllers
                 GetBrandsData();
                 return View("Add", beerVm);
             }
+            var context = beerVm.BrandId == null ?
+                            new BeerContext(new BeerWithBrandStrategy()) :
+                            new BeerContext(new BeerStrategy());
+
+            context.Add(beerVm, _unitOfWork);
 
             return RedirectToAction("Index");
         }
