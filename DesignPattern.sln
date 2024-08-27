@@ -39,7 +39,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPattern.UnitOfWork.Re
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Strategy", "Strategy", "{45358A46-73EA-40E0-AB5C-73CFB79B61FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern.Strategy", "DesignPattern.Strategy\DesignPattern.Strategy.csproj", "{4348F491-7095-4FCC-9527-CBA41A0D5246}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPattern.Strategy.Models", "DesignPattern.Strategy.Models\DesignPattern.Strategy.Models.csproj", "{4348F491-7095-4FCC-9527-CBA41A0D5246}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern.Strategy", "DesignPattern.Strategy\DesignPattern.Strategy.csproj", "{028D8D22-8A3A-4BD2-87D9-D8CE7B5A3423}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{4348F491-7095-4FCC-9527-CBA41A0D5246}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4348F491-7095-4FCC-9527-CBA41A0D5246}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4348F491-7095-4FCC-9527-CBA41A0D5246}.Release|Any CPU.Build.0 = Release|Any CPU
+		{028D8D22-8A3A-4BD2-87D9-D8CE7B5A3423}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{028D8D22-8A3A-4BD2-87D9-D8CE7B5A3423}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{028D8D22-8A3A-4BD2-87D9-D8CE7B5A3423}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{028D8D22-8A3A-4BD2-87D9-D8CE7B5A3423}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -117,6 +123,7 @@ Global
 		{1FC8DBEE-10D0-4530-8E05-EC7F61F88E9B} = {EBC03C56-25DF-4474-84C4-469F42A95FF9}
 		{96289E94-F0D0-4D19-ADB7-FF59D81100F4} = {EBC03C56-25DF-4474-84C4-469F42A95FF9}
 		{4348F491-7095-4FCC-9527-CBA41A0D5246} = {45358A46-73EA-40E0-AB5C-73CFB79B61FF}
+		{028D8D22-8A3A-4BD2-87D9-D8CE7B5A3423} = {45358A46-73EA-40E0-AB5C-73CFB79B61FF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BF562170-16D0-4F4D-B86F-190FA6A12DAA}

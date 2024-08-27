@@ -1,11 +1,42 @@
-﻿using DesignPattern.Strategy;
-using DesignPattern.Strategy.Contracts;
+using DesignPattern.UnitOfWork.Models.Data;
+using DesignPattern.UnitOfWork.Repository;
+using Microsoft.EntityFrameworkCore;
 
-var context = new Context(new Car());
-context.Run();
+var builder = WebApplication.CreateBuilder(args);
 
-context.Strategy = new Moto();
-context.Run();
+// Add services to the container.
+builder.Services.AddControllersWithViews();
 
-context.Strategy = new Bicycle();
-context.Run();
+
+// DbContext
+builder.Services.AddDbContext<UnitOfWorkContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Connection"));
+});
+
+// Repository Injection
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Home/Error");
+    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    app.UseHsts();
+}
+
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+
+app.UseRouting();
+
+app.UseAuthorization();
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.Run();
