@@ -5,3 +5,4 @@
 - [Dependency Injection](/DesignPattern.DependencyInjection)  
 - [Repository](/DesignPattern.Repository)  
 - [Unit of Work](/DesignPattern.UnitOfWork) 
+- [Strategy](/DesignPattern.Strategy) 
