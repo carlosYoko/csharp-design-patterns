@@ -1,5 +1,4 @@
-﻿using DesignPattern.UnitOfWork.Models.Data;
-using DesignPattern.UnitOfWork.Models.ViewModels;
+﻿using DesignPattern.UnitOfWork.Models.ViewModels;
 using DesignPattern.UnitOfWork.Repository;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -42,26 +41,6 @@ namespace DesignPattern.UnitOfWork.Controllers
                 GetBrandsData();
                 return View("Add", beerVm);
             }
-
-            var beer = new Beer();
-            beer.Name = beerVm.Name;
-            beer.Style = beerVm.Style;
-
-            if (beerVm.BrandId == null)
-            {
-                var brand = new Brand();
-                brand.Name = beerVm.OtherBrand;
-                brand.Id = Guid.NewGuid();
-                beer.BrandId = brand.Id;
-                _unitOfWork.Brands.Add(brand);
-            }
-            else
-            {
-                beer.BrandId = (Guid)beerVm.BrandId;
-            }
-
-            _unitOfWork.Beers.Add(beer);
-            _unitOfWork.Save();
 
             return RedirectToAction("Index");
         }
